@@ -1,7 +1,7 @@
 
 const Hero = () => {
   return (
-   <section className="">Hero</section>
+   <section className="h-screen">Hero</section>
   )
 }
 

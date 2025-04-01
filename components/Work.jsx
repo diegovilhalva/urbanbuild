@@ -2,7 +2,7 @@
 
 const Work = () => {
   return (
-    <div>Work</div>
+    <div id="projects">Work</div>
   )
 }
 
