@@ -47,7 +47,7 @@
   --breakpoint-lg: 960px;
   --breakpoint-xl: 1200px;
   --box-shadow: var(--box-shadow);
-  --bg-image-hero: url('/assets/img/hero/bg.jpg');
+  --background-image-hero: url('/assets/img/hero/bg.jpg');
   --color-primary: #121315;
   --color-sencodary: #666666;
   --color-accent: #ffca3b;
