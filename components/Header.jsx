@@ -3,6 +3,7 @@
 import { RiArrowUpLine } from "react-icons/ri"
 import { Link as ScrollLink } from "react-scroll"
 import Logo from "./Logo"
+import NavMobile from "./NavMobile"
 
 const links = [
   {
@@ -29,7 +30,7 @@ const links = [
 
 const Header = () => {
   return (
-    <header className="bg-primary py-4 sticky top-0">
+    <header className="bg-primary py-4 sticky">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <Logo />
@@ -54,7 +55,7 @@ const Header = () => {
           </nav>
 
           <div className="xl:hidden">
-            mobile nav
+            <NavMobile />
           </div>
         </div>
       </div>
