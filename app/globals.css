@@ -46,7 +46,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 960px;
   --breakpoint-xl: 1200px;
-  --box-shadow: var(--box-shadow);
+  --box-shadow-custom: var(--box-shadow);
   --background-image-hero: url('/assets/img/hero/bg.jpg');
   --color-primary: #121315;
   --color-sencodary: #666666;
