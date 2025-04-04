@@ -9,7 +9,7 @@ const Testimonials = () => {
     <section className="pt-16 xl:pt-32 ">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row relative">
-          <div className="flex-1 max-w-[484px] xl:pt-[54px] xl:mb-0 mb-5">
+          <div className="flex-1 max-w-[484px] xl:pt-[54px] xl:mb-0 mb-12">
             <PreTitle text="Testimonals" />
             <h2 className="h2 mb-6">Build on Trust, Proven by Results</h2>
             <p className="mb-10 max-w-[420px]">from homes to commecial spaces, our clients share their experiences of work with us.See how we've help them bring their dreams to live with expert craftsmanship.</p>
