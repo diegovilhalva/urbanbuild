@@ -17,7 +17,7 @@ const Topbar = () => {
               <div className="w-8 h-8 bg-primary text-white flex items-center justify-center">
                 <RiMailFill />
               </div>
-              <p className="font-medium text-primary">email@gmail.com</p>
+              <p className="font-medium text-primary">contact@urbanbuild.com</p>
             </div>
           </div>
           <Socials containerStyles="flex items-center gap-8 mx-auto xl:mx-0" iconsStyles="text-primary"/>
