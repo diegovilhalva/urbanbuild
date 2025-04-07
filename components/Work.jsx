@@ -3,6 +3,8 @@ import { RiArrowRightUpLine, RiCheckboxCircleFill } from "react-icons/ri"
 import PreTitle from "./PreTitle"
 import Image from "next/image"
 import Link from "next/link"
+import { motion } from "framer-motion"
+import { fadeIn } from "@/variants"
 
 const workData = [
   {
@@ -31,17 +33,20 @@ const workData = [
   },
 ]
 
+
+
 const Work = () => {
   return (
     <div id="projects" className="pt-16 xl:32 ">
       <div className="container mx-auto">
-        <div className="text-center max-w-[540px] mx-auto xl:mb-20">
+        <motion.div 
+         variants={fadeIn("up",0.2)} initial='hidden' whileInView="show" viewport={{once:false,amount:0.2}} className="text-center max-w-[540px] mx-auto xl:mb-20">
           <PreTitle text="Our work" center />
           <h2 className="h2 mb-3">Discover Our projects</h2>
           <p className="mb-11 max-w-[480px] mx-auto ">Providing expert services designer to deliver quality and innovation in every project we undertake.</p>
-        </div>
+        </motion.div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+      <motion.div  variants={fadeIn("up",0.3)} initial='hidden' whileInView="show" viewport={{once:false,amount:0.3}} className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
         {workData.map((item, i) => (
           <div className="w-full h-[492px] flex-1 relative overflow-hidden group flex justify-center"
             key={i}>
@@ -60,7 +65,7 @@ const Work = () => {
             </div>
           </div>
         ))}
-        </div>
+      </motion.div>
     </div>
   )
 }

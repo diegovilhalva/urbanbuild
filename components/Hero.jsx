@@ -1,4 +1,8 @@
+import { fadeIn } from "@/variants"
 import Button from "./Button"
+
+
+import { motion } from "framer-motion"
 
 const Hero = () => {
   return (
@@ -7,15 +11,15 @@ const Hero = () => {
       </div>
         <div className="container mx-auto h-full flex items-center">
           <div className="z-20 text-white text-center xl:text-left mx-auto xl:mx-0 flex flex-col items-center xl:items-start max-w-[680px]">
-            <h1 className="h1 text-white mb-4">
+            <motion.h1 variants={fadeIn("up",0.2)} initial='hidden' whileInView="show" viewport={{once:false,amount:0.8}}  className="h1 text-white mb-4">
               <span className="text-accent">Building</span> robust lasting solutions
-            </h1>
-            <p className="mb-9">
+            </motion.h1>
+            <motion.p className="mb-9" variants={fadeIn("up",0.2)} initial='hidden' whileInView="show" viewport={{once:false,amount:0.8}}>
               From concept to completion, we ensure every details is optimized for strength and endurance,creating solutions that inspire confidence and stand firm for years.
-            </p>
-            <div>
+            </motion.p>
+            <motion.div variants={fadeIn("up",0.4)} initial='hidden' whileInView="show" viewport={{once:false,amount:0.8}}>
              <Button text="See our work" />
-            </div>
+            </motion.div>
           </div>
         </div>  
     </section>

@@ -1,5 +1,7 @@
+import { motion } from "framer-motion";
 import FaqItem from "./FaqItem";
 import PreTitle from "./PreTitle";
+import { fadeIn } from "@/variants";
 
 
 const Faq = () => {
@@ -30,6 +32,7 @@ const Faq = () => {
     },
   ];
 
+
   const faqItemVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: () => ({
@@ -41,16 +44,16 @@ const Faq = () => {
   return (
     <div className="pt-16 xl:pt-32">
       <div className="container mx-auto">
-        <div className="text-center max-w-[540px] mx-auto xl:mb-20">
+        <motion.div  variants={fadeIn("up",0.2)} initial='hidden' whileInView="show" viewport={{once:false,amount:0.2}} className="text-center max-w-[540px] mx-auto xl:mb-20">
           <PreTitle text="Faq" center />
           <h2 className="h2 mb-2">got questions? We've Got You Covered</h2>
           <p className="mb-11 max-w-[480px] mx-auto">From project planning to final touches, we've answered the most common questions to help you make informed decisions.</p>
-        </div>
+        </motion.div>
         <ul className="w-full flex flex-col">
             {faqItemsData.map((item,index) => (
-               <li key={index}>
+               <motion.li key={index}  variants={faqItemVariants} initial='hidden' whileInView="visible" viewport={{once:false,amount:0.2}} custom={index}>
                 <FaqItem title={item.title} description={item.descripton} />
-               </li>
+               </motion.li>
             ))}
         </ul>
       </div>

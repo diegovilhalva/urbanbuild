@@ -27,7 +27,7 @@ export default function Home() {
 
 
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <Topbar />
       <div className="relative z-10">
         <Header />
