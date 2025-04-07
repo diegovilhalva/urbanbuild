@@ -35,7 +35,7 @@ const Faq = () => {
 
   const faqItemVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: () => ({
+    visible: (index) => ({
       opacity: 1,
       y: 0,
       transition: { delay: index * 0.1, duration: 0.3 }
@@ -51,7 +51,7 @@ const Faq = () => {
         </motion.div>
         <ul className="w-full flex flex-col">
             {faqItemsData.map((item,index) => (
-               <motion.li key={index}  variants={faqItemVariants} initial='hidden' whileInView="visible" viewport={{once:false,amount:0.2}} custom={index}>
+               <motion.li key={index}  variants={faqItemVariants} initial='hidden' whileInView="visible" viewport={{once:false,amount:0.8}} custom={index}>
                 <FaqItem title={item.title} description={item.descripton} />
                </motion.li>
             ))}
